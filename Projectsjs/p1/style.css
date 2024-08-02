@@ -1,0 +1,48 @@
+/* *{
+    height: 100px;
+    width: 100%;
+} */
+#main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main >*>*{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.justify{
+    justify-content: space-evenly;
+    display: flex;
+    
+    
+}
+.size{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.red{
+    background:red;
+    color: white;
+}
+.black{
+    background: #000;
+    color: white;
+   
+}
+.blue{
+    background: blue;
+    color: white;
+}
+.grey{
+    background: grey;
+    color: #000;
+}
