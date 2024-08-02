@@ -23,6 +23,8 @@
     
 }
 .size{
+    text-align: center;
+    border: 2px solid black;
     width: 60px;
     height: 60px;
     display: flex;
@@ -45,4 +47,7 @@
 .grey{
     background: grey;
     color: #000;
+}
+#white{
+    background-color:white;
 }
