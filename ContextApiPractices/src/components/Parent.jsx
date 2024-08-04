@@ -9,7 +9,7 @@ function Parent() {
     return (
         <div 
             className="h-[150px] w-[60px] border-fuchsia-900 rounded-s-lg"
-            style={{ backgroundColor: `${color}` }} // Apply the color from context
+            style={{ backgroundColor: color }} // Apply the color from context
         >
             {/* Any other content */}
         </div>
