@@ -21,7 +21,10 @@ addval.addEventListener("click",(e)=>{
         if (e.target.getAttribute("src") === "/advance js/images/emptBox.svg") {
             e.target.setAttribute("src", "/advance js/images/box.svg");
             e.target.nextElementSibling.style.textDecoration = "line-through";
-        } 
+        } else {
+            e.target.setAttribute("src", "/advance js/images/emptBox.svg");
+            e.target.nextElementSibling.style.textDecoration = "none";
+        }
     }
     else if(e.target.classList.contains("bin")){
         e.target.parentElement.remove();
