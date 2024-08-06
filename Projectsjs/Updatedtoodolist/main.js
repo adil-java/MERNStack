@@ -21,7 +21,7 @@ addval.addEventListener("click",(e)=>{
         if (e.target.getAttribute("src") === "/advance js/images/emptBox.svg") {
             e.target.setAttribute("src", "/advance js/images/box.svg");
             e.target.nextElementSibling.style.textDecoration = "line-through";
-            e.target.parentElement.style.backgroundColor = "darkgray";
+            e.target.parentElement.style.backgroundColor = "gray";
 
         } else {
             e.target.setAttribute("src", "/advance js/images/emptBox.svg");
