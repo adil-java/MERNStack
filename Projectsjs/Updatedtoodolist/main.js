@@ -7,7 +7,7 @@ submit.addEventListener("click", () => {
     }
     else {
         let val = values.value;
-        addval.innerHTML+=`<li>
+        addval.innerHTML+=`<li class = "light">
         <img class= "check" src="/advance js/images/emptBox.svg" alt="">
         <p id="p">${val}</p>
         <img class ="bin" src="/advance js/images/din.svg" alt="">
@@ -21,9 +21,13 @@ addval.addEventListener("click",(e)=>{
         if (e.target.getAttribute("src") === "/advance js/images/emptBox.svg") {
             e.target.setAttribute("src", "/advance js/images/box.svg");
             e.target.nextElementSibling.style.textDecoration = "line-through";
+            e.target.parentElement.style.backgroundColor = "darkgray";
+
         } else {
             e.target.setAttribute("src", "/advance js/images/emptBox.svg");
             e.target.nextElementSibling.style.textDecoration = "none";
+            e.target.parentElement.style.backgroundColor = "#303030";
+
         }
     }
     else if(e.target.classList.contains("bin")){

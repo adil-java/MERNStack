@@ -10,9 +10,15 @@ body{
     color: beige;
 }
 ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
     list-style: none;
 }
 li{
+    width: 40vw;
     display: flex;
     justify-content: space-evenly;
 }
@@ -28,7 +34,8 @@ li{
     background: #000000;
 }
 #p{
-    width: 20%;
+    padding-left:40px;
+    width: 20vw;
 }
 #val{
     border-radius: 20px;
@@ -45,4 +52,10 @@ li{
     border-style: none;
     background-color: #00836d;
     color: white;
+}
+.light{
+    width: 30vw;
+    background: #303030;
+    overflow: auto;
+    border-radius: 20px;
 }
