@@ -6,11 +6,23 @@
     <title>Document</title>
 </head>
 <body style="background-color:darkolivegreen; color: beige;">
-    <ul id="primary"> hello
+    <!-- <ul id="primary"> hello
         <h1 id="display">Display</h1>
         <li id="one"><img style="object-fit: fill; height: 120px;" src="/advance js/images/pexels-amar-27396193.jpg" alt=""></li>
         <li id = "two"><img style="object-fit:fill; height: 120px;" src="/advance js/images/pexels-tomas-malik-793526-27244368.jpg" alt=""></li>
-    </ul>
+    </ul> -->
 </body>
-<script src="event.js"></script>
+<script>
+    setTimeout(()=>{
+
+        let a= document.createElement('h1')
+        a.innerText = "Hello World1"
+        document.body.appendChild(a);
+    },0)
+    let b= document.createElement('h1')
+        b.innerText = "Hello World2"
+        document.body.appendChild(b);
+    
+
+</script>
 </html>

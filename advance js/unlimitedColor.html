@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><button class="btn1">Start</button><button class="btn2">stop</button></div>
+</body>
+<script>
+    let b1=  document.querySelector(".btn1")
+    let b2=  document.querySelector(".btn2")
+    function random(){
+    let hex = '0123456789ABCDEF'
+    let color='#'
+    for(i = 0 ;i<6;i++){
+        color += hex[Math.floor(Math.random()*16)]
+        console.log(color)
+    }
+    return color;
+
+    }
+    let start;
+    b1.addEventListener('click',()=>{
+        if(!start){
+
+            start = setInterval(()=>{
+                document.body.style.backgroundColor=random()
+            },1000)
+        }
+        })
+    b2.addEventListener('click',()=>{
+        clearInterval(start)
+        start = null;
+    })
+    </script>
+</html>
