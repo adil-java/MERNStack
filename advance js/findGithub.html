@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="main">
-        <div class="img">
+<body style="height: 100vh; display: flex; justify-content: center; align-items: center; background: #000; color: aliceblue;">
+    <div class="main" style="height: 10vh; width: 5vw ;">
+        <div class="img" >
             
         </div>
         <div class="input">
@@ -29,7 +29,7 @@
             xhr.onreadystatechange = function(){
                     if(xhr.readyState===4){
                     let response = JSON.parse(this.responseText)
-                    img.innerHTML=`<img src="${response.avatar_url}" alt="">`
+                    img.innerHTML=`<img style "width:40px; height:50px;" src="${response.avatar_url}" alt="">`
                 }
             }
         })
