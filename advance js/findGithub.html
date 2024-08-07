@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+            
+        </div>
+        <div class="input">
+            <input class="val" type="text"><button class="tab">Find</button>
+        </div>
+    </div>
+    <script>
+        let main = document.querySelector('.main');
+        let val = document.querySelector(".val");
+        let tab = document.querySelector(".tab");
+        let img = document.querySelector(".img");
+        tab.addEventListener('click',()=>{
+
+            const id = `https://api.github.com/users/${val.value}`
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET',id);
+            xhr.send();
+            
+            xhr.onreadystatechange = function(){
+                    if(xhr.readyState===4){
+                    let response = JSON.parse(this.responseText)
+                    img.innerHTML=`<img src="${response.avatar_url}" alt="">`
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
