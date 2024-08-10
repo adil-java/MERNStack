@@ -1,0 +1,8 @@
+Why learn React?
+-> hype,used to build UI
+-> used to make complex frontEnd Easily
+React convert to :
+-html 
+-Css   (Because browser only understand this)
+-Js
+
