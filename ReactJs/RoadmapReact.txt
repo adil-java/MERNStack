@@ -10,3 +10,6 @@ What learn in React?
 -Component reusablity
 - propogate Changes(Hooks)
 
+
+React use to make Sinlge page Website, to make multi page learn react routers.
+
