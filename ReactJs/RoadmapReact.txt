@@ -5,4 +5,8 @@ React convert to :
 -html 
 -Css   (Because browser only understand this)
 -Js
+What learn in React?
+-Core of React(State, Manipulation, Jsx)
+-Component reusablity
+- propogate Changes(Hooks)
 
