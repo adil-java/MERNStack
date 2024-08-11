@@ -10,6 +10,10 @@ What learn in React?
 -Component reusablity
 - propogate Changes(Hooks)
 
+>npm create vite@lates
+
 React Control the UI updatetion
 React use to make Sinlge page Website, to make multi page learn react routers.
+
+What is virtual DOM?
 
