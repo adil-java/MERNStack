@@ -33,7 +33,8 @@ function ReactComp(){
   // Mapping color names to Tailwind CSS classes
   return(
 
-    <div className={`h-screen bg-${color}-400 `}>
+    <div className={`h-screen w-full  `}
+    style={{backgroundColor:`${color}`}}>
       <App  />
     </div>
   );

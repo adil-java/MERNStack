@@ -12,11 +12,11 @@ function App() {
   return (
     <div className=' main max-w-screen-sm h-14 flex items-center justify-stretch border-2 rounded-xl bg-slate-500 '>
      
-      <Color color="sky"/>
+      <Color color="blue"/>
       <Color color="red" />
       <Color color="yellow" />
       <Color color="green" />
-      <Color color="slate" />
+      <Color color="grey" />
 
 
 <h2 className=""></h2>
