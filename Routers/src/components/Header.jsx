@@ -9,7 +9,7 @@ function Header() {
         </div>
         <ul className='flex gap-9 bg-slate-700 h-14 items-center justify-center'>
             <NavLink className={({isActive})=>`
-             ${isActive ? "text-orange-700" : "text-yellow-800 font-semibold"}`} to={"/home"}>Home</NavLink>
+             ${isActive ? "text-orange-700" : "text-yellow-800 font-semibold"}`} to={"home"}>Home</NavLink>
             <NavLink 
             className={({isActive})=>`${isActive ? "text-orange-700" : "text-yellow-800 font-semibold"}`} to={"/contact"}>Contact</NavLink>
             <NavLink className={({isActive})=>`${isActive ? "text-orange-700" : "text-yellow-800 font-semibold" }`} to={"/about"}>About</NavLink>

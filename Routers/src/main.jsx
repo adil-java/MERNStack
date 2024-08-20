@@ -9,12 +9,15 @@ import Contact from './options/Contact.jsx'
 
 import About from './options/About.jsx'
 import React from 'react'
+import User from './options/User.jsx'
 const route= createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
     <Route path='home' element={<Home/>}/>
     <Route path='contact' element={<Contact/>}/>
     <Route path='about' element={<About/>}/>
+    <Route path='user/:userid' element={<User />} />
+
     </Route>
   )
 )

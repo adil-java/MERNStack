@@ -4,7 +4,7 @@ import { useState ,useEffect } from 'react';
 function Home() {
     const [error, setError] = useState(null);
     const [data,setData] = useState({});
-    const [user,setUser] = useState("Reactjs")
+    const [user,setUser] = useState("")
     const ID = () => {
         fetch(`https://api.github.com/users/${user}`)
           .then((res) => {
