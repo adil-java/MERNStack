@@ -126,9 +126,9 @@
 // // let init =0;
 // let sum = num.reduce((a,c)=>a+c,0)
 // console.log(sum);
-// let course =[{name:"Mern",price:999},{name:"Full stack",price:1999},{name:"App dev and web",price:2999}]
-// let selected =course.filter((a)=>a.name==="Full stack" || a.name==="Mern").reduce((ac,p)=>ac+p.price,0)
-// console.log(selected)
-let n =[1,2,3,4,5]
-let s=0
-n.forEach((s)=>console.log(s+1))
+let course =[{name:"Mern",price:999},{name:"Full stack",price:1999},{name:"App dev and web",price:2999}]
+let selected =course.filter((a)=>a.name==="Full stack" || a.name==="Mern").reduce((ac,p)=>ac+p.price,0)
+console.log(selected)
+// let n =[1,2,3,4,5]
+// let s=0
+// n.forEach((s)=>console.log(s+1))
