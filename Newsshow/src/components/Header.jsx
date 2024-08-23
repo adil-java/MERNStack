@@ -17,8 +17,11 @@ function Header() {
   )} to="busniess">Busniess</NavLink>
             </li>
             <li>
-              {/* <Link to="/contact">Contact</Link> */}
+              <NavLink className={({isActive})=>(
+                isActive ? "text-white"  :"text-slate-600"
+  )} to="sport">Sports</NavLink>
             </li>
+           
           </ul>
         </div>
       </header>

@@ -6,7 +6,7 @@ export function CardThree() {
   return (
     <div className="w-[300px] rounded-md border bg-slate-300">
       <img
-src="/"
+            src="https://media.istockphoto.com/id/1652166108/photo/aerial-view-of-woman-standing-on-top-of-the-mountain-ridge-augstmatthorn.jpg?s=1024x1024&w=is&k=20&c=-tDFkFkCvYkh0ljUmLLl4AK1L6uAmREvPekLFN2uAJI="
 alt="NewsImg"
         className="h-[200px] w-full rounded-t-md object-cover"
       />
