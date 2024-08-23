@@ -10,7 +10,7 @@ function App() {
   
   return(
     <StrictMode>
-    <Header/>
+    {/* <Header/> */}
     </StrictMode>
   )
 }

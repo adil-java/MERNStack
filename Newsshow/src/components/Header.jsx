@@ -4,13 +4,17 @@ function Header() {
   return (
     <div>
       <header>
-        <div className='flex items-center w-full h-[234px] bg-slate-400'>
+        <div className='flex items-center w-full h-[40px] bg-slate-400 text-cyan-200 pl-12'>
           <ul className='flex space-x-4'>
             <li>
-              <Link to="home">Home</Link>
+              <NavLink className={({isActive})=>(
+                isActive ? "text-white"  :"text-slate-600"
+  )} to="home">Home</NavLink>
             </li>
             <li>
-              {/* <Link to="/">About</Link> */}
+              <NavLink className={({isActive})=>(
+                isActive ? "text-white"  :"text-slate-600"
+  )} to="busniess">Busniess</NavLink>
             </li>
             <li>
               {/* <Link to="/contact">Contact</Link> */}
