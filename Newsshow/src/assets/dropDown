@@ -1,0 +1,63 @@
+
+// import { useEffect, useState } from 'react';
+// import './App.css'
+
+// function App() {
+//   const [country,setCountry]=useState("");
+//   let data = [
+//     {  cities: ["Karachi", "Lahore", "KPK"],name: "Pakistan" },
+//     {  cities: ["Delhi", "UP", "Rajasthan"],name: "India" }
+//   ];
+//   useEffect(()=>{
+
+//     console.log(country);
+//   },[setCountry])
+//   return (
+//     <>
+//     <div className='h-[230px] bg-slate-400'>
+
+//       <select onChange={(e)=>{setCountry(e.target.value)}} >
+//       {data.map((value,index)=>(
+
+//         <option key={index} value={value.name}
+//        >{value.name}</option>
+
+//       ))}
+    
+//       </select>
+//       {country &&(
+
+//         <select>
+//           <option value="">{"Select The city"}</option>
+//           {data.filter((item)=>item.name===country)[0]
+//           .cities.map((city,index)=>(
+//             <option key={index} value={city}>{city}</option>
+
+//             // <option value=""></option>
+//           ))}
+          
+//         </select>
+//       )}
+//        {/* {country && (
+//           <select>
+//             <option value="">Select a city</option>
+//             {data
+//               .filter((item) => item.name === country)[0]
+//               .cities.map((city, index) => (
+//                 <option key={index} value={city}>
+//                   {city}
+//                 </option>
+//               ))}
+//           </select>
+//         )} */}
+//        {/* {data.map((value, index) => (
+//          <select>
+//            <option value={value.name}>{value.name}</option>
+//          </select>
+//        ))} */}
+//       </div>
+//     </>
+//   )
+// }
+
+// export default App
