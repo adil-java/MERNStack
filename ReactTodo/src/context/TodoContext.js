@@ -6,7 +6,7 @@ export const TodoContext = createContext({
             completed:false,
         }
     ],
-    adTodo:(todo)=>{},
+    addTodo:(todo)=>{},
     updateTodo:(id,todo)=>{},
     deleteTodo:(id)=>{},
     toggleComplete:(id)=>{}
