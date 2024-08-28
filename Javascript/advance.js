@@ -6,7 +6,7 @@ let msg = document.createElement('div');
 msg.id = "val";
 let p = document.createElement('p');
 main.appendChild(msg);
-msg.appendChild(p)
+msg.appendChild(p);
 
 
     increase.addEventListener('click',()=>{
