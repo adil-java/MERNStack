@@ -42,13 +42,13 @@ function Todo() {
                   onClick={() => handleUpdate(todo.id, todo.text)
 
                   }
-                  className="bg-blue-500 text-white px-2 hover:bg-blue-700"
+                  className="bg-blue-500 text-white px-2 hover:bg-blue-700 no-underline"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => dispatch(removeTodo(todo.id))}
-                  className="bg-red-500 text-white px-2 hover:bg-red-700"
+                  className={`bg-red-500 text-white px-2 hover:bg-red-700 ${checked[todo.id] ? "text-dec" : "" }` }
                 >
                   X
                 </button>
