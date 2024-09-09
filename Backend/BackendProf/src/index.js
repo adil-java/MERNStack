@@ -1,9 +1,24 @@
 import mongoose from "mongoose"
 import connectDB from "./db/index.js"
 import dotenv from "dotenv"
-
+import { app } from "./app.js"
 dotenv.config()
-connectDB();
+const port =process.env.PORT;
+connectDB()
+.then(()=>{
+
+    app.listen(port ,()=>{
+        console.log(`App is listing at: http://localhost:${port}`)
+    }
+)
+app.on("Error",(error)=>{console.log("App error:",error)
+    throw error;
+})
+})
+.catch((e)=>{
+    console.log("Connection Failed:",e)
+})
+
 
 
 
