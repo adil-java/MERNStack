@@ -6,7 +6,9 @@ dotenv.config()
 const port =process.env.PORT;
 connectDB()
 .then(()=>{
-
+    app.get("/",(req,res)=>{
+        res.json({name:"Adil"})
+    })
     app.listen(port ,()=>{
         console.log(`App is listing at: http://localhost:${port}`)
     }
@@ -16,7 +18,7 @@ app.on("Error",(error)=>{console.log("App error:",error)
 })
 })
 .catch((e)=>{
-    console.log("Connection Failed:",e)
+    console.og("Connection Failed:",e)
 })
 
 
